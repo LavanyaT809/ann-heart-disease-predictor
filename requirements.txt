@@ -30,6 +30,7 @@ Flask==3.1.2
 flatbuffers==25.2.10
 fonttools==4.59.2
 fqdn==1.5.1
+Flask-Cors
 gast==0.6.0
 google-pasta==0.2.0
 grpcio==1.74.0
