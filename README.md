@@ -170,6 +170,35 @@ http://localhost:5173/
 ├── package.json                   # Frontend dependencies
 ├── README.md                      # Project overview
 
+## 🔭 Future Scope
+
+- Integrate wearable device data (e.g., heart rate monitors, fitness trackers) for continuous real-time health monitoring and risk updates.
+- Incorporate advanced deep learning architectures like LSTM or transformers to model temporal health data and improve prediction accuracy.
+- Expand the model to support detection of additional cardiovascular conditions beyond heart disease for broader health insight.
+- Add telemedicine features to connect users with healthcare providers for faster consultations based on risk analysis.
+
+## 📚 What I Learned
+
+✅ **Technical Learnings**
+- Applied machine learning practically by building and training an artificial neural network (ANN) from clinical data, gaining deeper insight into model architecture, evaluation, and interpretability.
+- Learned to integrate backend (Flask) and frontend (React) for seamless user experiences and real-time AI predictions.
+- Implemented SHAP for transparent, explainable AI, and discovered the value of model interpretability in healthcare.
+- Improved skills in data preprocessing, handling feature engineering, and visualizing analytical results on dashboard UIs.
+- Gained experience debugging, optimizing, and deploying a full-stack ML application.
+
+💡 **Personal & Adaptive Growth**
+- Strengthened a problem-solving mindset by addressing real-world health challenges, adapting to new tools, and continuously learning from setbacks.
+- Developed a user-centric approach, making clinical predictions understandable and actionable for diverse users.
+- Learned the value of collaboration and feedback through iterative improvement and seeking clarity from documentation, research, and testing.
+- Gained perspective on how technology can make a positive difference when paired with empathy and real-life applications.
+
+## 🤝 Contributing
+
+Contributions are welcome and appreciated! For major changes, please open an issue first to discuss your suggestions or proposed improvements.
+
+## 💬 Support
+
+For queries, suggestions, or feedback, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/lavanya-tuptewar).
 
 
 
