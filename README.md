@@ -21,23 +21,29 @@ Instead of generic reports, the app uses a pre-trained artificial neural network
 
 ### 🏠 Homepage
 
-Displays trending and recommended health analyses in a clean dashboard layout.
+Visualizes AI-powered heart disease risk prediction and interactive health insights. Users can explore key health statistics, actionable recommendations, and personalized risk analysis all in one modern dashboard
+
+<img width="947" height="472" alt="home1" src="https://github.com/user-attachments/assets/5d8b182b-dffa-4297-899f-330afdcbf504" />
+<img width="899" height="454" alt="home2" src="https://github.com/user-attachments/assets/738ceede-b240-41fd-bd64-1acf5cdbcafd" />
 
 
-<img width="943" height="498" alt="dashboard" src="https://github.com/user-attachments/assets/08f33139-6400-473b-85d1-aac525d09175" />
+
+
+
+
 
 ---
+### 📝 Patient Entry Form
 
-### 🧠 Prediction Results
+A clean and intuitive form for users to enter clinical details and instantly receive their heart disease risk score, supporting quick and personalized assessment for early detection.
+<img width="274" height="467" alt="form" src="https://github.com/user-attachments/assets/fb33cc94-af8b-4154-b86d-55afad5bf943" />
 
-Shows AI-powered risk scores, probability, and personalized recommendations after submitting health data.
-
-![Prediction Results](path/to/your/prediction-screenshot.png)
 
 ---
 
 ### 📊 Detailed Insights
 
-Visualizes SHAP explanations and health metric comparisons for interpretable model results.
+Uses a trained artificial neural network (ANN) analyzing 13 clinical features to predict heart disease risk. Displays risk probability, key feature impacts via SHAP, health comparisons, and personalized lifestyle advice for actionable insights.
+<img width="943" height="498" alt="dashboard" src="https://github.com/user-attachments/assets/f655ae46-72ab-43c5-8425-c7b152ab7570" />
 
-![Dashboard Insights](path/to/your/dashboard-screenshot.png)
+
