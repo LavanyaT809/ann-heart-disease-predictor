@@ -17,3 +17,27 @@ Instead of generic reports, the app uses a pre-trained artificial neural network
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 ![SHAP](https://img.shields.io/badge/SHAP-FF9800?style=for-the-badge)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
+## 📸 Screenshots
+
+### 🏠 Homepage
+
+Displays trending and recommended health analyses in a clean dashboard layout.
+
+![Homepage](path/to/your/homepage-screenshot.png)
+<img width="943" height="498" alt="dashboard" src="https://github.com/user-attachments/assets/08f33139-6400-473b-85d1-aac525d09175" />
+
+---
+
+### 🧠 Prediction Results
+
+Shows AI-powered risk scores, probability, and personalized recommendations after submitting health data.
+
+![Prediction Results](path/to/your/prediction-screenshot.png)
+
+---
+
+### 📊 Detailed Insights
+
+Visualizes SHAP explanations and health metric comparisons for interpretable model results.
+
+![Dashboard Insights](path/to/your/dashboard-screenshot.png)
