@@ -131,27 +131,44 @@ http://localhost:5173/
 ## 📁 Project Structure
 
 ├── data/
+
 │   └── processed.cleveland.data        # UCI Heart Disease dataset
+
 ├── frontend/
+
 │   ├── public/                        # Frontend static assets
+
 │   └── src/
+
 │       ├── assets/                    # Images and SVGs for UI
+
 │       ├── App.css                    # Global app styles
+
 │       ├── CardioCare.css             # Core dashboard styles
+
 │       ├── App.jsx                    # Main app structure/routing
+
 │       ├── PredictionForm.jsx         # Patient detail entry form component
+
 │       ├── PredictionResult.jsx       # Results dashboard component
+
 │       ├── PredictionDashboard.jsx    # Layout for dashboard sections & charts
+
 │       ├── index.css                  # General stylesheet
+
 │       └── main.jsx                   # React/Vite frontend entry point
 ├── static/
+
 │   └── plots/                         # Generated SHAP and result visualizations
+
 │   └── style.css                      # Shared static styles
+
 ├── utils/
+
 │   ├── explain.py                     # ML explainability (SHAP logic)
 │   ├── ranges.py                      # Health metric normal ranges
 │   ├── recommendations.py             # Personalized advice logic
-│   └── dashboard_utils.py             # Helper functions for dashboard
+
 ├── heart_disease_model.h5             # Trained ANN model file
 ├── app.py                             # Flask backend server
 ├── HeartDiseasePrediction.ipynb        # Model development Jupyter notebook
