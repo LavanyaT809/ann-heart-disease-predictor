@@ -50,14 +50,22 @@ Uses a trained artificial neural network (ANN) analyzing 13 clinical features to
 
 ## 🚀 Features
 
-- Trained Artificial Neural Network (ANN) model leveraging dense layers and nonlinear activations for accurate heart disease risk prediction.
-- Uses UCI Cleveland dataset with 13 key clinical features: age, sex, chest pain, blood pressure, cholesterol, fasting blood sugar, ECG, thalach, exercise angina, ST depression, slope, major vessels, thal.
-- Delivers real-time probability scores and categorizes risk as Low, Medium, or High based on model output.
-- Integrated SHAP explanations highlight feature contributions and promote AI interpretability for each patient input.
-- Health comparison table dynamically benchmarks user values against clinical normal ranges.
-- Personalized lifestyle recommendations generated from abnormal feature values.
-- Achieves strong model accuracy: **92%** (precision: 0.91/0.93, recall: 0.94/0.89, F1-score: 0.92/0.91).
-- Responsive dashboard UI built with React for seamless patient entry, result visualization, and interactivity.
-- Fast and secure API communication powered by Flask backend.
+- **Trained Artificial Neural Network** (ANN) model leveraging dense layers and nonlinear activations for accurate heart disease risk prediction.
+  
+- Uses **UCI Cleveland dataset** with 13 key clinical features: age, sex, chest pain, blood pressure, cholesterol, fasting blood sugar, ECG, thalach, exercise angina, ST depression, slope, major vessels, thal.
+  
+- **Delivers real-time probability scores** and categorizes risk as Low, Medium, or High based on model output.
+  
+- **Integrated SHAP explanations** highlight feature contributions and promote AI interpretability for each patient input.
+  
+- **Health comparison table** dynamically benchmarks user values against clinical normal ranges.
+  
+- **Personalized lifestyle recommendations** generated from abnormal feature values.
+  
+- **Achieves strong model accuracy**: **92%** (precision: 0.91/0.93, recall: 0.94/0.89, F1-score: 0.92/0.91).
+  
+- **Responsive dashboard UI** built with React for seamless patient entry, result visualization, and interactivity.
+  
+- **Fast and secure API** communication powered by Flask backend.
 
 
