@@ -1,0 +1,535 @@
+/* --- Global Styles and Variables --- */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #f0f8f0;
+  --card-background: #ffffff;
+  --text-color: #333;
+  --subtle-text: #555;
+  --border-color: #ddd;
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --light-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+.cardio-care-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.get-started-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.get-started-btn:hover {
+  background-color: #45a049;
+}
+
+.hero-section {
+  background-image: url('https://risingkashmir.blr1.digitaloceanspaces.com/wp-content/uploads/2024/08/Heart-Disease-860x573.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: left;
+  padding-left: 100px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content .highlight {
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.how-it-works-section {
+  padding: 33px 100px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.how-it-works-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.how-it-works-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: -50px;
+}
+
+.how-it-works-section h2::before {
+  content: '';
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path fill="none" stroke="%234CAF50" stroke-width="2" d="M0,10 L10,10 L15,5 L20,15 L25,10 L35,10 L40,5 L45,15 L50,10 L60,10 L65,5 L70,15 L75,10 L100,10"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 20px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.how-it-works-section p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: -50px;
+}
+
+.how-it-works-section .get-started-btn {
+  margin-left: -50px;
+}
+
+.symptoms-section {
+  background-color: var(--secondary-color);
+  margin-top: -10px;
+  padding: 0px 70px;
+  text-align: center;
+}
+
+.symptoms-header {
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.symptoms-header p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--subtle-text);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.symptoms-header .highlight-text {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.symptom-card {
+  position: relative;
+  margin-bottom: 28px;
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.symptom-card .card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) blur(2px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.symptom-card.active .card-background {
+  filter: grayscale(0%) blur(0px);
+}
+
+.symptom-card .card-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.symptom-card.active ~ .symptom-card {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-icon svg {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prediction-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+.prediction-form-card {
+  background-color: var(--card-background);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.prediction-form-card h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: var(--subtle-text);
+  margin-bottom: 8px;
+}
+
+.prediction-form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.prediction-form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.predict-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.predict-btn:hover {
+  background-color: #45a049;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #eaffea; /* Unified light green background */
+  font-family: 'Inter', sans-serif;
+}
+
+.sidebar-bg {
+  width: 400px;
+  min-width: 300px;
+  background: #eaffea;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px 0 0 0;
+}
+
+.sidebar-bg img {
+  width: 100%;
+  height: auto;
+  max-height: 300vh;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 6px 28px rgba(60,160,120,0.13);
+  margin: 0;
+  display: block;
+}
+
+.cards-area {
+  flex: 1;
+  background: #eaffea;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px; /* Reduced gap for tighter card spacing */
+  padding: 48px 32px;
+  overflow-y: auto;
+}
+
+.card-box {
+  background: var(--card-background);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(60, 160, 120, 0.10), 0 1.5px 5px rgba(0,0,0,0.05);
+  padding: 16px; /* Reduced padding for smaller boxes */
+  margin-bottom: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem; /* Unified smaller font */
+  transition: box-shadow 0.25s cubic-bezier(.22,1,.36,1), transform 0.15s;
+}
+.card-box:hover {
+  box-shadow: 0 14px 42px rgba(24, 104, 82, 0.13), 0 2px 8px rgba(0,0,0,0.07);
+  transform: translateY(-3px) scale(1.015);
+  z-index: 2;
+}
+
+.card-box h2, .card-box h3 {
+  font-size: 1.2rem;    /* Unified heading sizes */
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.card-box.feature-contribution {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 12px;
+  font-size: 0.85rem;
+}
+
+.card-box.feature-contribution img {
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-box table {
+  width: 90%;
+  margin: 0 auto;   
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.card-box th, .card-box td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.card-box th {
+  background: #f8f8f8;
+  font-weight: bold;
+}
+
+.card-box tr:last-child td {
+  border-bottom: none;
+}
+
+.card-box ul {
+  margin-top: 12px;
+  padding-left: 24px;
+}
+
+.card-box li {
+  margin-bottom: 10px;
+}
+
+.card-box button {
+  padding: 10px 28px;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 6px;
+}
+
+.card-box button:hover {
+  background: #43BF4D;
+}
+
+.back-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #45a049;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--text-color);
+  z-index: 9999;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 900px) {
+  .dashboard-layout { flex-direction: column; }
+  .sidebar-bg { width: 100%; min-width: unset; justify-content: center; padding: 24px 0; }
+  .cards-area { grid-template-columns: 1fr; gap: 18px; padding: 24px 8px; }  
+  .card-box { padding: 16px; font-size: 1rem;}
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-left: 20px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .how-it-works-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .how-it-works-content {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 10px;
+  }
+  .symptom-card {
+    width: 100%;
+    height: auto;
+  }
+  .cards-area {
+    grid-template-columns: 1fr !important;
+    padding: 20px 10px;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .get-started-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
+
+
+
+

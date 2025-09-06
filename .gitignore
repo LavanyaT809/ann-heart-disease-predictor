@@ -1,0 +1,71 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+
+# Data and Models
+data/*
+data/processed.cleveland.data  
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# Flask/Static Output
+/static/plots/
+*.sqlite3
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# Node/React
+/frontend/node_modules/
+frontend/node_modules/
+build/
+dist/
+*.log
+
+# Vite/React build
+/frontend/dist
+frontend/dist
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Sensitive or environment files
+.env
+.env.*
+
+
+*.h5
+.vercel
