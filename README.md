@@ -4,7 +4,7 @@ A full-stack AI solution leveraging an Artificial Neural Network to predict hear
 Instead of generic reports, the app uses a pre-trained artificial neural network model for accurate risk scoring and provides interpretable visualizations.
 ## 🔗 Project Links
 
-- **Live Demo:** [Heart Disease Predictor – Live App](https://ann-heart-disease-predictor-4.onrender.com/)
+- **Live Demo:** [Heart Disease Predictor – Live Demo](https://ann-heart-disease-predictor-4.onrender.com/)
 - **GitHub Repository:** [https://github.com/LavanyaT809/ann-heart-disease-predictor](https://github.com/LavanyaT809/ann-heart-disease-predictor)
 
 ## 🧰 Built With
