@@ -67,8 +67,7 @@ Uses a trained artificial neural network (ANN) analyzing 13 clinical features to
 - **Responsive dashboard UI** built with React for seamless patient entry, result visualization, and interactivity.
   
 - **Fast and secure API** communication powered by Flask backend.
-
-  ## 🛠️ Tech Stack
+ ## 🛠️ Tech Stack
 
 | Layer      | Technologies Used                                                  |
 |------------|-------------------------------------------------------------------|
