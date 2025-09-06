@@ -23,7 +23,7 @@ Instead of generic reports, the app uses a pre-trained artificial neural network
 
 Displays trending and recommended health analyses in a clean dashboard layout.
 
-![Homepage](path/to/your/homepage-screenshot.png)
+
 <img width="943" height="498" alt="dashboard" src="https://github.com/user-attachments/assets/08f33139-6400-473b-85d1-aac525d09175" />
 
 ---
