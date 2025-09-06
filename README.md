@@ -23,7 +23,7 @@ Instead of generic reports, the app uses a pre-trained artificial neural network
 
 Visualizes AI-powered heart disease risk prediction and interactive health insights. Users can explore key health statistics, actionable recommendations, and personalized risk analysis all in one modern dashboard
 
-<img width="947" height="472" alt="home1" src="https://github.com/user-attachments/assets/5d8b182b-dffa-4297-899f-330afdcbf504" />
+<img width="899" height="454" alt="home1" src="https://github.com/user-attachments/assets/5d8b182b-dffa-4297-899f-330afdcbf504" />
 <img width="899" height="454" alt="home2" src="https://github.com/user-attachments/assets/738ceede-b240-41fd-bd64-1acf5cdbcafd" />
 
 
