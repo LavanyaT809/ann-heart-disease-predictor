@@ -200,6 +200,10 @@ Contributions are welcome and appreciated! For major changes, please open an iss
 
 For queries, suggestions, or feedback, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/lavanya-tuptewar).
 
+## 📄 License
+
+This project is licensed under the [MIT License](https://github.com/LavanyaT809/ann-heart-disease-predictor/blob/main/LICENSE).
+
 
 
 
