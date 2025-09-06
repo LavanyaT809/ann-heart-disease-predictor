@@ -68,4 +68,18 @@ Uses a trained artificial neural network (ANN) analyzing 13 clinical features to
   
 - **Fast and secure API** communication powered by Flask backend.
 
+  ## 🛠️ Tech Stack
+
+| Layer      | Technologies Used                                                  |
+|------------|-------------------------------------------------------------------|
+| Frontend   | React.js, JavaScript (ES6+), HTML5, CSS3                          |
+| Styling    | Custom CSS (modular per component),Responsive Web Design |
+| ML Model   | Keras, TensorFlow – Artificial Neural Network (ANN) architecture   |
+| Data       | UCI Cleveland Heart Disease Dataset (CSV)                         |
+| Backend    | Flask backend serving AI-powered prediction and SHAP explanation logic to the React frontend    |
+| Explainability | SHAP – Feature impact visualization and interpretability       |
+| Build      | Vite.js – Fast frontend build and bundling                        |
+| Deploy     | Render – Cloud deployment (full-stack Flask + React app)           |
+
+
 
