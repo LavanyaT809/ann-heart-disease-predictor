@@ -165,11 +165,11 @@ http://localhost:5173/
 
 ├── utils/
 
-  │   ├── explain.py                     # ML explainability (SHAP logic)
-  
-  │   ├── ranges.py                      # Health metric normal ranges
-  
-  │   ├── recommendations.py             # Personalized advice logic
+    │   ├── explain.py                     # ML explainability (SHAP logic)
+    
+    │   ├── ranges.py                      # Health metric normal ranges
+    
+    │   ├── recommendations.py             # Personalized advice logic
 
 ├── heart_disease_model.h5             # Trained ANN model file
 
