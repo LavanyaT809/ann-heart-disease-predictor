@@ -84,4 +84,50 @@ Uses a trained artificial neural network (ANN) analyzing 13 clinical features to
 
  Heart disease is a leading cause of death worldwide, affecting roughly 1 in 3 adults. With millions losing their lives each year, I wanted to leverage machine learning to offer accessible, real-time risk assessments that empower individuals to understand and manage their heart health proactively.This project is driven by the motivation to apply technology in solving critical health problems and contribute to improving lives.
  
+## 🚀 Getting Started
+
+From setup to prediction in minutes!
+
+📦 **Prerequisites**
+
+- Python 3.8+ installed
+  
+- Node.js (v16+ recommended) and npm for frontend
+  
+- pip for installing Python packages
+
+🛠️ **Installation Steps**
+
+Follow these steps to run the project locally:
+
+```bash
+1. Clone the repository  
+   `git clone https://github.com/yourusername/heart-disease-predictor.git`
+
+2. Navigate to the project folder  
+   `cd heart-disease-predictor`
+
+3. Set up the backend  
+   - Install dependencies:  
+     `pip install -r requirements.txt`  
+   - (Optional) Download the UCI Cleveland dataset to `/data` if not included.
+
+4. Start the Flask backend server  
+   `python app.py`
+
+5. Set up the frontend  
+   - Navigate to frontend folder:  
+     `cd frontend`  
+   - Install frontend dependencies:  
+     `npm install`  
+   - Start the development server:  
+     `npm run dev`
+```
+
+🌐 **Access the Web App**  
+After running both servers, open:  
+`http://localhost:5173/`
+
+
+
 
