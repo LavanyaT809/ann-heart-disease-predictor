@@ -128,6 +128,33 @@ Follow these steps to run the project locally:
 After running both servers, open:  
 http://localhost:5173/
 
+## 📁 Project Structure
+
+├── data/
+│   └── processed.cleveland.data    # UCI Heart Disease dataset
+├── frontend/
+│   ├── public/                    # Static files (images, icons)
+│   └── src/
+│       ├── assets/                # CSS, images, visual resources
+│       ├── App.jsx                # Main component and routing
+│       ├── PredictionForm.jsx     # Form for patient details
+│       ├── PredictionResult.jsx   # Results dashboard view
+│       ├── PredictionDashboard.jsx# Dashboard layout and charts
+│       ├── CardioCare.css         # Core styles
+│       ├── index.css              # Global stylesheet
+│       └── main.jsx               # Frontend entry point (React + Vite)
+├── heart_disease_model.h5         # Pre-trained ANN model
+├── app.py                         # Flask backend server
+├── utils/
+│   ├── explain.py                 # SHAP explainability helpers
+│   ├── ranges.py                  # Health value ranges
+│   ├── recommendations.py         # Logic for lifestyle advice
+│   └── dashboard_utils.py         # Extra dashboard helper functions
+├── requirements.txt               # Python dependencies
+├── package.json                   # Frontend dependencies
+├── README.md                      # Project overview
+
+
 
 
 
