@@ -80,5 +80,8 @@ Uses a trained artificial neural network (ANN) analyzing 13 clinical features to
 | Build      | Vite.js – Fast frontend build and bundling                        |
 | Deploy     | Render – Cloud deployment (full-stack Flask + React app)           |
 
+## 🧠 Why I Built This
 
+ Heart disease is a leading cause of death worldwide, affecting roughly 1 in 3 adults. With millions losing their lives each year, I wanted to leverage machine learning to offer accessible, real-time risk assessments that empower individuals to understand and manage their heart health proactively.This project is driven by the motivation to apply technology in solving critical health problems and contribute to improving lives.
+ 
 
