@@ -5,7 +5,7 @@ Instead of generic reports, the app uses a pre-trained artificial neural network
 ## 🔗 Project Links
 
 - **Live Demo:** [Heart Disease Predictor – Live App](https://ann-heart-disease-predictor-4.onrender.com/)
-- **GitHub Repository:** [https://github.com/yourusername/heart-disease-predictor](https://github.com/LavanyaT809/ann-heart-disease-predictor)
+- **GitHub Repository:** [https://github.com/LavanyaT809/ann-heart-disease-predictor](https://github.com/LavanyaT809/ann-heart-disease-predictor)
 
 ## 🧰 Built With
 
