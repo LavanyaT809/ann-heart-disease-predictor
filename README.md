@@ -131,44 +131,34 @@ http://localhost:5173/
 ## 📁 Project Structure
 
 ├── data/
-
-│   └── processed.cleveland.data    # UCI Heart Disease dataset
-
+│   └── processed.cleveland.data        # UCI Heart Disease dataset
 ├── frontend/
-
-│   ├── public/                    # Static files (images, icons)
-
+│   ├── public/                        # Frontend static assets
 │   └── src/
-
-│       ├── assets/                # CSS, images, visual resources
-
-│       ├── App.jsx                # Main component and routing
-
-│       ├── PredictionForm.jsx     # Form for patient details
-
-│       ├── PredictionResult.jsx   # Results dashboard view
-
-│       ├── PredictionDashboard.jsx# Dashboard layout and charts
-
-│       ├── CardioCare.css         # Core styles
-
-│       ├── index.css              # Global stylesheet
-
-│       └── main.jsx               # Frontend entry point (React + Vite)
-
-├── heart_disease_model.h5         # Pre-trained ANN model
-
-├── app.py                         # Flask backend server
-
+│       ├── assets/                    # Images and SVGs for UI
+│       ├── App.css                    # Global app styles
+│       ├── CardioCare.css             # Core dashboard styles
+│       ├── App.jsx                    # Main app structure/routing
+│       ├── PredictionForm.jsx         # Patient detail entry form component
+│       ├── PredictionResult.jsx       # Results dashboard component
+│       ├── PredictionDashboard.jsx    # Layout for dashboard sections & charts
+│       ├── index.css                  # General stylesheet
+│       └── main.jsx                   # React/Vite frontend entry point
+├── static/
+│   └── plots/                         # Generated SHAP and result visualizations
+│   └── style.css                      # Shared static styles
 ├── utils/
-│   ├── explain.py                 # SHAP explainability helpers
+│   ├── explain.py                     # ML explainability (SHAP logic)
+│   ├── ranges.py                      # Health metric normal ranges
+│   ├── recommendations.py             # Personalized advice logic
+│   └── dashboard_utils.py             # Helper functions for dashboard
+├── heart_disease_model.h5             # Trained ANN model file
+├── app.py                             # Flask backend server
+├── HeartDiseasePrediction.ipynb        # Model development Jupyter notebook
+├── requirements.txt                   # Python dependencies
+├── package.json                       # Frontend dependencies and scripts
+├── README.md                          # Project overview & documentation
 
-│   ├── ranges.py                  # Health value ranges
-│   ├── recommendations.py         # Logic for lifestyle advice
-│   └── dashboard_utils.py         # Extra dashboard helper functions
-├── requirements.txt               # Python dependencies
-├── package.json                   # Frontend dependencies
-├── README.md                      # Project overview
 
 ## 🔭 Future Scope
 
@@ -200,7 +190,7 @@ Contributions are welcome and appreciated! For major changes, please open an iss
 
 For queries, suggestions, or feedback, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/lavanya-tuptewar).
 
-## 📄 License
+## 📜 License
 
 This project is licensed under the [MIT License](https://github.com/LavanyaT809/ann-heart-disease-predictor/blob/main/LICENSE).
 
