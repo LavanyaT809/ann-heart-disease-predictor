@@ -102,31 +102,31 @@ Follow these steps to run the project locally:
 
 ```bash
 1. Clone the repository  
-   `git clone https://github.com/yourusername/heart-disease-predictor.git`
+   git clone https://github.com/LavanyaT809/ann-heart-disease-predictor.git
 
 2. Navigate to the project folder  
-   `cd heart-disease-predictor`
+   cd heart-disease-predictor
 
 3. Set up the backend  
    - Install dependencies:  
-     `pip install -r requirements.txt`  
-   - (Optional) Download the UCI Cleveland dataset to `/data` if not included.
+     pip install -r requirements.txt
+   - (Optional) Download the UCI Cleveland dataset to /data if not included.
 
 4. Start the Flask backend server  
-   `python app.py`
+   python app.py
 
 5. Set up the frontend  
    - Navigate to frontend folder:  
-     `cd frontend`  
+     cd frontend  
    - Install frontend dependencies:  
-     `npm install`  
+     npm install 
    - Start the development server:  
-     `npm run dev`
+     npm run dev
 ```
 
 🌐 **Access the Web App**  
 After running both servers, open:  
-`http://localhost:5173/`
+http://localhost:5173/
 
 
 
