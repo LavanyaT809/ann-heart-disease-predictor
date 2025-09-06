@@ -132,7 +132,7 @@ http://localhost:5173/
 
 ├── data/
 
-│   └── processed.cleveland.data        # UCI Heart Disease dataset
+   │   └── processed.cleveland.data        # UCI Heart Disease dataset
 
 ├── frontend/
 
@@ -140,40 +140,47 @@ http://localhost:5173/
 
 │   └── src/
 
-│       ├── assets/                    # Images and SVGs for UI
+  │       ├── assets/                    # Images and SVGs for UI
 
-│       ├── App.css                    # Global app styles
-
-│       ├── CardioCare.css             # Core dashboard styles
-
-│       ├── App.jsx                    # Main app structure/routing
-
-│       ├── PredictionForm.jsx         # Patient detail entry form component
-
-│       ├── PredictionResult.jsx       # Results dashboard component
-
-│       ├── PredictionDashboard.jsx    # Layout for dashboard sections & charts
-
-│       ├── index.css                  # General stylesheet
+    │       ├── App.css                    # Global app styles
+  
+    │       ├── CardioCare.css             # Core dashboard styles
+  
+    │       ├── App.jsx                    # Main app structure/routing
+    
+    │       ├── PredictionForm.jsx         # Patient detail entry form component
+    
+    │       ├── PredictionResult.jsx       # Results dashboard component
+    
+    │       ├── PredictionDashboard.jsx    # Layout for dashboard sections & charts
+    
+    │       ├── index.css                  # General stylesheet
 
 │       └── main.jsx                   # React/Vite frontend entry point
 ├── static/
 
-│   └── plots/                         # Generated SHAP and result visualizations
-
-│   └── style.css                      # Shared static styles
+  │   └── plots/                         # Generated SHAP and result visualizations
+  
+  │   └── style.css                      # Shared static styles
 
 ├── utils/
 
-│   ├── explain.py                     # ML explainability (SHAP logic)
-│   ├── ranges.py                      # Health metric normal ranges
-│   ├── recommendations.py             # Personalized advice logic
+  │   ├── explain.py                     # ML explainability (SHAP logic)
+  
+  │   ├── ranges.py                      # Health metric normal ranges
+  
+  │   ├── recommendations.py             # Personalized advice logic
 
 ├── heart_disease_model.h5             # Trained ANN model file
+
 ├── app.py                             # Flask backend server
+
 ├── HeartDiseasePrediction.ipynb        # Model development Jupyter notebook
+
 ├── requirements.txt                   # Python dependencies
+
 ├── package.json                       # Frontend dependencies and scripts
+
 ├── README.md                          # Project overview & documentation
 
 
